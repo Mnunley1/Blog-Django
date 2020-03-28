@@ -6,7 +6,7 @@ from .models import Entry
 
 class HomeView(LoginRequiredMixin, ListView):
     model = Entry
-    template_name = 'entries/index.html'
+    template_name = 'entries/home.html'
     context_object_name = 'blog_entries'
     ordering = ['-entry_date']
     paginate_by = 3

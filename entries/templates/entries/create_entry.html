@@ -12,4 +12,19 @@
     </div>
   </div>
 </div>
+<!-- Side Widget -->
+<div class="card my-4">
+  <h5 class="card-header text-center">Logged in Information</h5>
+  <div class="card-body">
+    <ul class="list-unstyled mb-0">
+      <li>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+      </li>
+      <li>
+        <p><strong>Email:</strong> {{user.email }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
 {% endblock %}
